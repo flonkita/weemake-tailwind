@@ -1,0 +1,18 @@
+---
+import Card from "../components/Card.astro"
+import Button from "../components/Button.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+const { title } = Astro.props;
+
+---
+	<BaseLayout title="Acceuil" name="Cards">
+
+		<div class="flex flex-row justify-between">
+			<Card title="Standard" number="30" number1="50" number2="1000" fonct1="zdzd"/>
+			<Card title="Pro" number="50" number1="50" number2="1000" fonct1="zdzd"/>
+			<Card title="Business" number="70" number1="50" number2="1000" fonct1="zdzd"/>
+		</div>
+
+		<hr class="pt-10">
+		<Button href = '/' text ='Home'>Home</Button>
+	</BaseLayout>
